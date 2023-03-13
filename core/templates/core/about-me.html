@@ -1,0 +1,29 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Acerca de...{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg'%}{% endblock %}
+
+{% block headers %}
+<h1>Fabian Vargas</h1>
+<span class="subheading">Magister en Física - Data Analyst - Django Backend</span>
+{% endblock %}
+
+
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+    <img class="img-fluid avatar" src="{% static 'core/img/avatar.png'%}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+    <h2 class="section-heading">Fabian R. Vargas A.</h2>   
+    <p>Soy Magister en física con conocimiento y manejo de numerosas ramas de la matemática y la
+física aplicada con experiencia en la simulación de sistemas físicos mediante métodos numéricos.
+Tengo manejo en lenguajes de programación como C++, SQL y Python, con un mayor manejo he realizado cursos en
+análisis de bases de datos mediante PANDAS. </p>
+    <p>Me encuentro capacitado para realizar el análisis y predicción de diversos sistemas, tanto haciendo relaciones funcionales como
+comportamientos estadísticos, haciendo uso de mediante herramientas computacionales.</p>
+    </div>
+</div>
+{% endblock %}
